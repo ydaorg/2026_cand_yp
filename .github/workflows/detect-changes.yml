@@ -1,0 +1,57 @@
+name: Detect source changes
+
+on:
+  schedule:
+    - cron: "00 0 * * 6"        # 每週六 臺灣 08:00
+    - cron: "17 2 25,26 11 *"   # 選舉公報預定上網日 11/25、11/26 臺灣 10:17
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: detect-changes
+  cancel-in-progress: false
+
+jobs:
+  detect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r scripts/requirements.txt
+
+      - name: 建立通知用標籤
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create "待更新" --color D93F0B --description "來源有變動，等待判讀更新" --force
+          gh label create "政見回報" --color 0E8A16 --description "志工回報的政見" --force
+
+      - name: 抓取來源並比對
+        run: python scripts/fetch_sources.py
+
+      - name: 整理變動報告
+        id: report
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/make_report.py
+
+      - name: 開通知
+        if: steps.report.outputs.has_changes == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create --title "來源有變動，待更新（$(TZ=Asia/Taipei date +%m/%d)）" \
+            --body-file state/report.md --label "待更新"
+
+      - name: 保存比對紀錄
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git add state/hashes.json state/snapshots
+          git diff --cached --quiet || git commit -m "紀錄：更新來源快照 [skip ci]"
+          git push
