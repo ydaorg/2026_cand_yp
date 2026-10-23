@@ -1,0 +1,56 @@
+# 要定期檢查的來源清單。fetch_sources.py 會逐一抓取、比對雜湊，有變動才進入下一步。
+# level 對應網站上的來源層級：A 選舉公報／官方政見網站，B 競辦正式發布，C 媒體報導
+# 新增候選人官網或社群帳號時，在 candidates 底下加一筆即可。
+
+bulletin:
+  # 中選會選舉公報：預計 11/25 前上網。程式會自動到公報網站的
+  #   01選舉公報/03直轄市長/115年/01紙本公報、01選舉公報/04縣市長/115年/01紙本公報
+  # 目錄找出各縣市的公報 PDF，不需要手動填網址。
+  # 本屆資料夾還沒出現時會自動略過，下次排程再試。
+  discover: true
+  year: 115
+  offices: [03直轄市長, 04縣市長]
+  level: A
+  pdfs: []   # 只有自動找不到時才手動補：- {county: 臺北市, url: https://.../xxx.pdf}
+
+candidates:
+  - id: tp-shen
+    name: 沈伯洋
+    level: A
+    pages:
+      - https://puma.taipei/policies
+      - https://puma.taipei/policies/%E9%9D%92%E5%B9%B4%E6%94%BF%E7%AD%96
+  - id: ntpc-su
+    name: 蘇巧慧
+    level: A
+    pages:
+      - https://chiao.tw/policies
+  - id: hcc-ho
+    name: 何志勇
+    level: A
+    pages:
+      - https://chihyungho.github.io/
+  # 其他候選人公布官方政見網站後加在這裡：
+  # - id: tp-chiang
+  #   name: 蔣萬安
+  #   level: A
+  #   pages: [https://...]
+
+# 新聞搜尋：用 Google News RSS 查「候選人＋政見」關鍵字，只當作「有新消息」的線索，
+# 正式計分仍以候選人官方發布或公報為準。
+news_rss:
+  template: "https://news.google.com/rss/search?q={query}&hl=zh-TW&gl=TW&ceid=TW:zh-Hant"
+  queries:
+    - "縣市長 青年 政見"
+    - "市長候選人 青年政策"
+    - "縣長候選人 育兒 政見"
+    - "候選人 租屋補貼 政見"
+  max_items: 40
+
+# 官方社群：Facebook／Instagram／Threads 的使用條款禁止未經授權的自動抓取。
+# 做法二選一：
+#   1. 申請 Meta Graph API（需粉專管理權或審核通過的應用程式），把權杖存在 GitHub Secrets 的 META_TOKEN；
+#   2. 由志工人工把社群貼文的網址與全文貼進 GitHub Issue（已提供「政見回報」表單），由流程讀取。
+social:
+  mode: manual   # manual 或 graph_api
+  accounts: []   # 例：- {id: tp-shen, platform: facebook, page_id: "..."}

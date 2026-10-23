@@ -1,0 +1,110 @@
+[
+ {
+  "id": "eu-strategy",
+  "name": "歐盟青年策略 2019–2027",
+  "org": "歐盟理事會",
+  "year": "2018 年 11 月 26 日決議",
+  "what": "歐盟青年政策的合作框架，以「參與（Engage）、連結（Connect）、賦權（Empower）」三大核心行動推動跨部門青年政策。",
+  "use": "作為整體架構：青年政策不只是補助，也包含參與決策與跨部門整合。",
+  "url": "https://youth.europa.eu/strategy_en"
+ },
+ {
+  "id": "eu-goals",
+  "name": "歐洲青年目標（11 項）",
+  "org": "歐盟（歐盟青年對話）",
+  "year": "2018 年納入歐盟青年策略",
+  "what": "由歐洲青年參與討論提出的 11 項目標：連結歐盟與青年、性別平等、包容社會、資訊與對話、心理健康與福祉、推動鄉村青年、人人有優質就業、優質學習、空間與參與、永續綠色歐洲、青年組織與歐洲計畫。",
+  "use": "就業、學習、心理健康、參與、包容、鄉村青年與「永續綠色歐洲」分別對應本站的面向。",
+  "url": "https://youth.europa.eu/strategy/european-youth-goals_en"
+ },
+ {
+  "id": "eu-dashboard",
+  "name": "EU 青年儀表板",
+  "org": "歐盟統計局 Eurostat",
+  "year": "持續更新",
+  "what": "依青年策略三大核心行動整理的統計指標，例如：青年志工參與、公民參與、青年失業率、自僱人數與數位能力。",
+  "use": "參考其指標分類，確認每個面向都能對應到可衡量的青年處境。",
+  "url": "https://ec.europa.eu/eurostat/web/children-youth/database/eu-youth-dashboard"
+ },
+ {
+  "id": "un-wpay",
+  "name": "《世界青年行動綱領》",
+  "org": "聯合國大會",
+  "year": "1995 年第 50/81 號決議",
+  "what": "聯合國第一份全球青年政策框架，列出 15 大優先領域：教育、就業、飢餓與貧窮、健康、環境、藥物濫用、少年司法、休閒活動、女孩與年輕女性、參與、全球化、資訊與通訊科技、愛滋病、武裝衝突、世代議題。",
+  "use": "對照教育、就業、健康、休閒、參與、性別、世代、全球化與環境等面向。",
+  "url": "https://social.desa.un.org/issues/youth/wpay"
+ },
+ {
+  "id": "un-youth2030",
+  "name": "聯合國青年策略 Youth2030",
+  "org": "聯合國秘書長",
+  "year": "2018 年 9 月啟動",
+  "what": "聯合國系統與青年共同推動的策略，五大優先：參與與倡議、知情與健康的基礎、以體面工作促進經濟賦權、青年與人權、和平與韌性。",
+  "use": "支持把「參與」與「經濟賦權」列為獨立面向。",
+  "url": "https://www.un.org/youthaffairs/en/node/31"
+ },
+ {
+  "id": "un-future",
+  "name": "《未來世代宣言》",
+  "org": "聯合國（未來高峰會）",
+  "year": "2024 年 9 月《未來契約》附件二",
+  "what": "各國領袖承諾當代人應負責任地保障未來世代的需要與利益，促進世代間的團結、正義與公平，並承認兒童與青年是改變的推動者。",
+  "use": "作為「氣候與世代正義」面向的依據：今天的決策，後果由青年與下一代承擔。",
+  "url": "https://www.un.org/pact-for-the-future/en/declaration-future-generations"
+ },
+ {
+  "id": "oecd-rec",
+  "name": "OECD 為青年創造更好機會建議書",
+  "org": "經濟合作暨發展組織（OECD）",
+  "year": "2022 年 6 月 10 日理事會通過（OECD/LEGAL/0474）",
+  "what": "五大支柱：技能與能力、勞動市場、社會包容與福祉（所得支持、住宅、身心健康）、信任與參與、行政與技術能力（年齡分類資料、跨部門青年政策、世代正義）。明列確保青年有可負擔的住宅，並要求青年就業與環境目標一致。2024 年另出版《OECD 青年政策工具包》協助各國落實。",
+  "use": "本站居住、就業、技能、身心健康、參與與氣候面向的主要對照。",
+  "url": "https://www.oecd.org/en/publications/2024/11/oecd-youth-policy-toolkit_3de4a9f0/full-report.html"
+ },
+ {
+  "id": "oecd-gov",
+  "name": "《青年治理、信任與世代正義》",
+  "org": "經濟合作暨發展組織（OECD）",
+  "year": "2020 年 10 月",
+  "what": "比較 42 國政府與歐盟的青年政策、法律與治理工具，從三方面設定基準：支持青年邁向自主生活、強化青年參與和代表性、讓政策結果在世代間公平。",
+  "use": "參與與治理面向的依據；身分加權也參考其「邁向自主生活」的歷程（完成學業、就業、獨立居住、成家）。",
+  "url": "https://www.oecd.org/en/publications/governance-for-youth-trust-and-intergenerational-justice_c3e5cb8a-en.html"
+ },
+ {
+  "id": "coe-2030",
+  "name": "歐洲理事會青年部門策略 2030",
+  "org": "歐洲理事會",
+  "year": "2020 年 1 月 22 日部長委員會通過",
+  "what": "四大主題優先：青年振興多元民主、青年近用權利、在和平包容的社會共同生活、青年工作。2024–2027 年優先事項另納入氣候危機與環境惡化對青年的影響。",
+  "use": "對照參與、平等包容與氣候面向。",
+  "url": "https://www.coe.int/en/web/youth/priorities"
+ },
+ {
+  "id": "who-aaha",
+  "name": "《加速青少年健康全球行動》AA-HA! 第二版",
+  "org": "世界衛生組織（WHO）等聯合國機構",
+  "year": "2023 年 10 月",
+  "what": "協助各國規劃、執行與評估青少年健康與福祉方案的指引，由 WHO 與 UNAIDS、UNESCO、UNFPA、UNICEF、UN Women 等共同編寫，第二版更重視整體福祉。",
+  "use": "身心健康面向的依據。",
+  "url": "https://who.int/publications/i/item/9789240081765"
+ },
+ {
+  "id": "ilo-neet",
+  "name": "永續發展指標 SDG 8.6.1",
+  "org": "國際勞工組織（ILO）主責",
+  "year": "聯合國永續發展目標指標",
+  "what": "衡量 15–24 歲青年中「未就學、未就業、未受訓」（NEET）的比例，是國際上追蹤青年就業與教育銜接最常用的指標。",
+  "use": "就業與教育技能面向的結果指標參考。",
+  "url": "https://worldbank.github.io/sdg-metadata/metadata/en/8-6-1"
+ },
+ {
+  "id": "cw-ydi",
+  "name": "全球青年發展指數 YDI 2023",
+  "org": "大英國協秘書處",
+  "year": "2023 年更新報告",
+  "what": "以 27 項指標衡量 183 個國家 15–29 歲青年的發展，分為教育、就業與機會、平等與包容、健康與福祉、和平與安全、政治與公民參與六大領域。",
+  "use": "對照教育、就業、平等包容、健康與參與面向；並提醒我們國際指數衡量的是結果，本站衡量的是政見。",
+  "url": "https://thecommonwealth.org/publications/global-youth-development-index-update-report-2023/youth-development-index-glance"
+ }
+]
